@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+    <style>
+        p {
+            color: aqua;
+        }
+
+        /*a classe é representa por um . antes do nome */
+        /*a classe sobrepoem os estilos dos seletores genericos */
+        .vermelho {
+            color: red;
+        }
+
+        .azul {
+            color: blue;
+        }
+
+        .bgciano {
+            /* background é um atributo com mais configurações sendo aqui trocano apenas */
+            /* a cor de fundo */
+            background: cyan;
+        }
+
+        /* o id sobrepoem a classe */
+        #roxo {
+            color: purple;
+        }
+        h1,h2{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1> Classes css</h1>
+    <h2> Veja exemplos abaixo</h2>
+    <p>Olá mundo</p>
+    <p>Olá mundo</p>
+    <p class="vermelho">Eu sou vermelho</p>
+    <p class="azul">Eu sou azul</p>
+    <p class="bgciano">Eu tenho background ciano</p>
+    <p id="roxo" id="azul">Atenção</p>
+    <!-- css inline sobrepoem as classes e ids-->
+    <p id="roxo" class="bgciano" style="color:brown; background: pink;">Tudo muda</p>
+    <p class="bgciano vermelho">Aqui é azul e vermelho</p>
+    <a href="./"><img src="btn_voltar3.png" alt="voltar" width="50px"></a>
+</body>
+
+</html>
